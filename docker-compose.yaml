@@ -1,0 +1,12 @@
+version: '3'
+services:
+  sender:
+    build: 
+      context: .
+      dockerfile: docker/dev/Dockerfile
+    volumes:
+     - ./sender:/app/sender
+    working_dir: /app
+    ports:
+      - 9876:9876
+      - 8080:8080
