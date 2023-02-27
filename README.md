@@ -16,6 +16,10 @@ with live code realoading
 sudo docker build -t web-socket -f ./docker/dev/Dockerfile .
 sudo docker run -v ~/training/go/notification/web-socket/sender:/app/sender -it -p 9876:9876 -p 8080:8080 web-socket
 ```
+or
+```
+docker compose up --build
+```
 or (for non dokerized version)
 
 ```
